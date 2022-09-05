@@ -6,8 +6,6 @@ load = ""
 c = 0
 
 for a in range(0,len(list)):
-    #print(list[a])
-    print(list[a])
     if list[a].isnumeric():
         load = load + list[a]
     if list[a] == ",":
@@ -28,10 +26,13 @@ for a in range(0,len(list)):
         load = ""
 highest = 0
 line = 0
+print(br)
+print(br2)
+
 for a in range(0, len(br)):
     d = pow(int(br[a]),int(br2[a]))
     if d > highest:
-        d = highest
+        highest = d
         line = a
 
 print(line)

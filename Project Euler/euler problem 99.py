@@ -1,6 +1,5 @@
 file = open("G:\p099_base_exp.txt", 'r')
 list = file.read()
-
 br = []
 br2 = []
 load = ""
@@ -27,11 +26,12 @@ for a in range(0,len(list)):
             br2.append(load)
             c = 0
         load = ""
-br.sort()
-br2.sort()
+highest = 0
+line = 0
+for a in range(0, len(br)):
+    d = pow(int(br[a]),int(br2[a]))
+    if d > highest:
+        d = highest
+        line = a
 
-max_left = int(br[0])
-max_right = int(br2[0])
-print(f"{max_left} ** {max_right}")
-
-print(pow(max_left,max_right))
+print(line)

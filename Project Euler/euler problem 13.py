@@ -1,4 +1,4 @@
-from euler13file import var
+from euler13info import var
 
 ukupno = 0
 count = 0
